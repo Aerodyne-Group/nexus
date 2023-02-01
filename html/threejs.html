@@ -67,7 +67,14 @@ function getURLParameter(name) {
 	return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
 }
 
-var model = getURLParameter('model') || "models/gargo.nxz";
+// var model = getURLParameter('model') || "models/gargo.nxz";
+
+// obj file size: 898.3 MB
+// .nxz file size: 669.5 MB
+var model = 'https://aerodyne-telstra-dev.s3.amazonaws.com/Temp/aerodyne_ml/sref_WA001016/sref_WA001016.nxz?AWSAccessKeyId=AKIAZ3ROG2OFVPSJM24T&Signature=Qo4xULP%2FMURWgXNx6V8yhihKLfw%3D&Expires=1676470662';
+// obj file size: 315.2 MB
+// .nxz file size: 207.2 MB
+// var model = 'https://aerodyne-telstra-dev.s3.amazonaws.com/Temp/aerodyne_ml/sref_NSW006572/sref_NSW006572.nxz?AWSAccessKeyId=AKIAZ3ROG2OFVPSJM24T&Signature=dzyfZQ4Pgpk5bH4Bu3rBQ4J%2BJfQ%3D&Expires=1676470612';
 
 /* An appropriate material can be used as optional fifth arg for the NexusObject constructor */
 let material = false;
